@@ -144,7 +144,7 @@ pub use nl::{CanCtrlMode, CanInterface, SetCanParams};
 pub mod tokio;
 
 /// Optional support for async-io-based async runtimes, like async-std and smol.
-#[cfg(any(feature = "async-io", feature = "async-std", feature = "smol"))]
+#[cfg(any(feature = "async-std", feature = "smol"))]
 pub mod async_io;
 
 /// Using the specific definition for 'smol', just re-export the async_io module.
